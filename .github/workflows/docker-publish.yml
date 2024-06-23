@@ -6,6 +6,8 @@ name: Docker
 # documentation.
 
 on:
+  repository_dispatch:
+    types: [build-docker-image]
   push:
     branches: ["main"]
     # Publish semver tags as releases.
